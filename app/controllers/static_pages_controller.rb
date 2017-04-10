@@ -5,18 +5,10 @@ class StaticPagesController < ApplicationController
 
   def help
   end
-<<<<<<< HEAD
-  
-  def about
-  end
-  
-  def contact
-  end
-  
-=======
+
   def about
   end
   def contact
   end
->>>>>>> filling-in-layout
+
 end
