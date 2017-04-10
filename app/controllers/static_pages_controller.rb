@@ -5,6 +5,7 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+<<<<<<< HEAD
   
   def about
   end
@@ -12,4 +13,10 @@ class StaticPagesController < ApplicationController
   def contact
   end
   
+=======
+  def about
+  end
+  def contact
+  end
+>>>>>>> filling-in-layout
 end
