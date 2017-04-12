@@ -27,8 +27,7 @@ From the root folder run `rails test`
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-Checkout the project from `git@bitbucket.org:aashish61/ruby_assignment_2a.git`<br />
-
+Checkout the project from `git@bitbucket.org:aashish61/ruby_assignment_2a.git`
 Run `bundle install` using git bash
 
 
