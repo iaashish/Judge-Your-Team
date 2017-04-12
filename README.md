@@ -31,4 +31,5 @@ Checkout the project from `git@bitbucket.org:aashish61/ruby_assignment_2a.git`
 Run `bundle install` using git bash
 
 
-* ...
+* Heroku URL
+https://vast-bayou-50586.herokuapp.com/
