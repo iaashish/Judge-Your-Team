@@ -32,4 +32,4 @@ Run `bundle install` using git bash
 
 
 * Heroku URL
-`https://vast-bayou-50586.herokuapp.com/`
+[Assignment-2A](https://vast-bayou-50586.herokuapp.com/)
