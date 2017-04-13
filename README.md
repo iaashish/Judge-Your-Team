@@ -17,7 +17,7 @@ Git: `git version 2.10.2.windows.1`
 * Database creation
 `postgres`
 
-* Database initialization
+* Database initialization  
 Run `rails db:setup` from root folder  
 Run `rails db:migrate` from root folder
 
