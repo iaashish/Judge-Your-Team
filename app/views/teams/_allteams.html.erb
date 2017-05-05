@@ -1,5 +1,3 @@
-<% provide(:title, @user.name) %>
-
 <style type="text/css">
     body
     {
@@ -39,17 +37,12 @@
         background-color: #888888;
     }
     </style>
+<% @allteams.each do |list| %>
 
-<div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
-  <div class="col-md-8">
-  <% @team.where(:user_id => @user.id).each do |list| %>
+
+<div class="container" style="float: left;
+    width: 650px;">
+ <h2 style="float:left;color:black; font-size: 27px;">Judge :&nbsp;&nbsp; </h2> <h2 id="judgename" style="color:black; font-weight: bold !important; font-size: 27px;;float:left"><%= User.find(list.user_id).name %></h2>
   <table class="table">
     <thead>
       <tr>
@@ -73,6 +66,24 @@
       
     </tbody>
   </table>
-  <%end%>
-  </div>
 </div>
+<% end%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170416061138) do
+ActiveRecord::Schema.define(version: 20170429073101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,25 @@ ActiveRecord::Schema.define(version: 20170416061138) do
     t.index ["user_id"], name: "index_microposts_on_user_id", using: :btree
   end
 
+  create_table "teams", force: :cascade do |t|
+    t.text     "creativity"
+    t.text     "relevance"
+    t.text     "sustainability"
+    t.text     "userexperience"
+    t.text     "correctness_comments"
+    t.text     "creativity_comments"
+    t.text     "relevance_comments"
+    t.text     "sustainability_comments"
+    t.text     "userexperience_commoents"
+    t.integer  "user_id"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+    t.text     "teamname"
+    t.text     "correctness"
+    t.index ["user_id", "created_at"], name: "index_teams_on_user_id_and_created_at", using: :btree
+    t.index ["user_id"], name: "index_teams_on_user_id", using: :btree
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
@@ -37,4 +56,5 @@ ActiveRecord::Schema.define(version: 20170416061138) do
   end
 
   add_foreign_key "microposts", "users"
+  add_foreign_key "teams", "users"
 end

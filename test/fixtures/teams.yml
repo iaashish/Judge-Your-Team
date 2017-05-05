@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  correctness: MyText
+  creativity: MyText
+  relevance: MyText
+  sustainability: MyText
+  userexperience: MyText
+  correctness_comments: MyText
+  creativity_comments: MyText
+  relevance_comments: MyText
+  sustainability_comments: MyText
+  userexperience_commoents: MyText
+  user: one
+
+two:
+  correctness: MyText
+  creativity: MyText
+  relevance: MyText
+  sustainability: MyText
+  userexperience: MyText
+  correctness_comments: MyText
+  creativity_comments: MyText
+  relevance_comments: MyText
+  sustainability_comments: MyText
+  userexperience_commoents: MyText
+  user: two

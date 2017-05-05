@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<h1>Team - <b><%= @team.teamname %></b> </h1>
+<%= form_for(@team) do |f| %>
+<div class="center">
+<table class="table">
+  <thead>
+    <tr>
+	<th>Criteria</th>
+	  <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+	<tr>
+      <th scope="row"><%= f.label "Correctness" %></th>
+      <td><%= f.text_field :correctness%></td>
+      <td><%= f.text_area :correctness_comments%></td>
+    </tr>
+	<tr>
+      <th scope="row"><%= f.label "Relevance" %></th>
+      <td><%= f.text_field :relevance%></td>
+      <td><%= f.text_area :relevance_comments%></td>
+    </tr>
+	<tr>
+      <th scope="row"><%= f.label "Creativity" %></th>
+      <td><%= f.text_field :creativity%></td>
+      <td><%= f.text_area :creativity_comments%></td>
+    </tr>
+	<tr>
+      <th scope="row"><%= f.label "User experience" %></th>
+	  <td><%= f.text_field :userexperience%></td>
+      <td><%= f.text_area :userexperience_commoents%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.label "Relevance" %></th>
+      <td><%= f.text_field :sustainability%></td>
+      <td><%= f.text_area :sustainability_comments%></td>
+    </tr>
+
+  </tbody>
+</table>
+  <%= f.submit "Save changes", class: "btn btn-lg btn-primary" %>
+</div>
+ 
+
+<% end %>
+</html>	

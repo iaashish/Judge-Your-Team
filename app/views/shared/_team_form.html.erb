@@ -1,0 +1,33 @@
+<%= form_for(@team) do |f| %>
+
+<table class="table">
+  <thead>
+    <tr>
+	  <th>Score</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><%= f.label "Relevance" %></th>
+      <td><%= f.text_field :relevance%></td>
+      <td><%= f.text_area :relevance_comments%></td>
+    </tr>
+    <tr>
+      <th scope="row"><%= f.label "Creativity" %></th>
+      <td><%= f.text_field :creativity%></td>
+      <td><%= f.text_area :creativity_comments%></td>
+    </tr>
+    <tr>
+      <th scope="row">3<%= f.label "User experience" %></th>
+	  <td><%= f.text_field :userexperience%></td>
+      <td><%= f.text_area :userexperience_commoents%></td>
+    </tr>
+  </tbody>
+</table>
+  <%= f.submit "Create", class: "btn btn-primary" %>
+
+ 
+
+<% end %>
+

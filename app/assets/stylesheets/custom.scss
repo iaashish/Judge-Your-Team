@@ -28,6 +28,9 @@ $gray-medium-light: #eaeaea;
 
 body {
   padding-top: 60px;
+    background-color: #e9ebee;	
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
@@ -153,7 +156,7 @@ footer {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -202,4 +205,26 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
+}
+
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.select-style select:focus {
+    outline: none;
 }
